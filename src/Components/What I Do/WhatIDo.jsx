@@ -15,8 +15,8 @@ import "./WhatIDo.css";
 class WhatIDo extends Component {
   render() {
     return (
-      <div className="grid lg:grid-cols-2 lg:gap-48  ">
-        <div>
+      <div className="grid lg:grid-cols-2 lg:gap-4">
+        <div className="lg:ms-32">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="602.61127"
@@ -561,8 +561,8 @@ class WhatIDo extends Component {
           </svg>
         </div>
         <div>
-          <h2 className="text-5xl font-semibold">What I Do?</h2>
-          <p className="text-1xl font-medium  my-5">
+          <h2 className="text-5xl font-semibold ps-4">What I Do?</h2>
+          <p className="text-lg font-medium  my-5 ps-4">
             CRAZY Front End DEVELOPER WHO
             <br /> WANTS TO EXPLORE EVERY TECH STACK
           </p>

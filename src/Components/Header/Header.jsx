@@ -35,6 +35,7 @@ class Header extends Component {
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
                 <svg
+                  style={{ color: "#130f40" }}
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
                   fill="none"
@@ -53,13 +54,17 @@ class Header extends Component {
                 tabIndex={0}
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li className="common-nav">
+                <li className="common-nav" style={{ color: "#130f40" }}>
                   <a>Skills</a>
                 </li>
-                <li tabIndex={0} className="common-nav">
+                <li
+                  tabIndex={0}
+                  className="common-nav"
+                  style={{ color: "#130f40" }}
+                >
                   <a className="justify-between">Work Experience</a>
                 </li>
-                <li className="common-nav">
+                <li className="common-nav" style={{ color: "#130f40" }}>
                   <Link>
                     {" "}
                     <a>Contact Me</a>
