@@ -4,12 +4,18 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Components/Layout/Layout.jsx";
+import Contact from "./Components/Contact/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [],
+    children: [
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(

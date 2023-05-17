@@ -562,7 +562,7 @@ class WhatIDo extends Component {
         </div>
         <div>
           <h2 className="text-5xl font-semibold">What I Do?</h2>
-          <p className="text-1xl font-medium text-slate-800 my-5">
+          <p className="text-2xl font-medium  my-5">
             CRAZY Front End DEVELOPER WHO
             <br /> WANTS TO EXPLORE EVERY TECH STACK
           </p>

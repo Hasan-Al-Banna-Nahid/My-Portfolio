@@ -2,11 +2,9 @@
 import React, { Component } from "react";
 import "./Banner.css";
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import Header from "../Header/Header";
 
 class Banner extends Component {
-  componentDidMount() {
-    const tag = document.getElementById("tag");
-  }
   render() {
     const skills = [
       "React Js",
@@ -26,6 +24,7 @@ class Banner extends Component {
       index = (index + 1) % skills.length;
     }
     setInterval(showNextSkill, 1300);
+    const intro = document.getElementById("intro");
 
     return (
       <div className="lg:mx-16">
@@ -35,7 +34,7 @@ class Banner extends Component {
               Hi EveryOne, I'm <br />{" "}
               <span className="common ms-6 name">Hasan Al Banna</span>
             </h3>
-            <p className="text-2xl text-[#2c3e50] font-medium">
+            <p id="intro" className="text-2xl  font-medium">
               A passionate Front End Software Developer 🚀 having an experience
               of building Modern Web applications with some cool libraries and
               frameworks.

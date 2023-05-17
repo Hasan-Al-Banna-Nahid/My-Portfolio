@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import "./Header.css";
 import { FaToggleOn, FaToggleOff } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -15,6 +16,15 @@ class Header extends Component {
       isClicked: !this.state.isClicked,
     });
   };
+  darkMode(params) {
+    document.body.style.backgroundColor = "#130f40";
+    document.body.style.color = "#ffffff";
+    document.getElementById("menu").style.color = "Black";
+  }
+  lightMode() {
+    document.body.style.color = "#130f40";
+    document.body.style.backgroundColor = "";
+  }
   render() {
     const leftAngle = "<";
     const rightAngle = " />";
@@ -50,7 +60,10 @@ class Header extends Component {
                   <a className="justify-between">Work Experience</a>
                 </li>
                 <li className="common-nav">
-                  <a>Contact Me</a>
+                  <Link>
+                    {" "}
+                    <a>Contact Me</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -59,7 +72,10 @@ class Header extends Component {
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 font-medium text-2xl">
+            <ul
+              id="menu"
+              className="menu menu-horizontal px-1 font-medium text-2xl"
+            >
               <li className="common-nav">
                 <a>Skills</a>
               </li>
@@ -67,16 +83,18 @@ class Header extends Component {
                 <a>Work Experience</a>
               </li>
               <li className="common-nav">
-                <a>Contact Me</a>
+                <Link to="/contact">
+                  <a>Contact Me</a>
+                </Link>
               </li>
             </ul>
           </div>
           <div className="navbar-end text-4xl">
             <div onClick={this.handleToggle}>
-              {this.state.isClicked ? (
-                <FaToggleOn className="toggleOn" />
+              {!this.state.isClicked ? (
+                <FaToggleOff className="toggleOff" onClick={this.darkMode} />
               ) : (
-                <FaToggleOff className="toggleOff" />
+                <FaToggleOn className="toggleOn" onClick={this.lightMode} />
               )}
             </div>
           </div>

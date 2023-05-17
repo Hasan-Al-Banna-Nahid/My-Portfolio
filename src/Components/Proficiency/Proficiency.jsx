@@ -6,9 +6,7 @@ class Proficiency extends Component {
   render() {
     return (
       <div>
-        <h2 className="text-4xl font-bold text-[#130f40] text-center my-8">
-          Proficiency
-        </h2>
+        <h2 className="text-4xl font-bold  text-center my-8">Proficiency</h2>
         <div className="proficiency">
           <div>
             <h1 className="text-2xl font-semibold">
