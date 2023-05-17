@@ -1,0 +1,21 @@
+.name {
+  font-family: "Agustina", sans-serif;
+}
+#slider {
+  width: 600px;
+  height: 70px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#slider div {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Cutive", serif;
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .svg-container {
+    max-width: 100%;
+  }
+}

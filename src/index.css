@@ -3,3 +3,6 @@
 @tailwind utilities;
 
 @import url("https://fonts.cdnfonts.com/css/agustina");
+body {
+  font-family: "Montserrat", sans-serif;
+}

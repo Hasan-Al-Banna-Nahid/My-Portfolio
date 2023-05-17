@@ -59,7 +59,7 @@ class Header extends Component {
             </a>
           </div>
           <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1 text-2xl">
+            <ul className="menu menu-horizontal px-1 font-medium text-2xl">
               <li className="common-nav">
                 <a>Skills</a>
               </li>

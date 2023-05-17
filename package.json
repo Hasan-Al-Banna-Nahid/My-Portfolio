@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@moxy/react-animate-text": "^1.0.0",
+    "aos": "^2.3.4",
     "daisyui": "^2.51.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
