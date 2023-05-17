@@ -4,6 +4,8 @@ import Header from "../Header/Header";
 import Banner from "../Banner/Banner";
 import WhatIDo from "../What I Do/WhatIDo";
 import Proficiency from "../Proficiency/Proficiency";
+import Education from "../Education/Education";
+import Contact from "../Contact/Contact";
 
 class Layout extends Component {
   render() {
@@ -13,6 +15,8 @@ class Layout extends Component {
         <Banner />
         <WhatIDo />
         <Proficiency />
+        <Education />
+        <Contact />
       </div>
     );
   }

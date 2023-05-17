@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import "./Banner.css";
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 class Banner extends Component {
   componentDidMount() {
