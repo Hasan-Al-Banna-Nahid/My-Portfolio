@@ -14,6 +14,7 @@
   font-family: "Cutive", serif;
   font-size: 18px;
 }
+
 @media screen and (max-width: 576px) {
   .svg-container {
     max-width: 100%;

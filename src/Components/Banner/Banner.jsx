@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { Component } from "react";
 import "./Banner.css";
+import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 class Banner extends Component {
   componentDidMount() {
@@ -8,16 +10,15 @@ class Banner extends Component {
   }
   render() {
     const skills = [
-      "Developer",
-      "ReactJs",
-      "ExpressJS",
+      "React Js",
+      "Express JS",
       "JavaScript",
       "Firebase",
       "MongoDB",
       "TailwindCSS",
       "Bootstrap",
-      "HTML5",
-      "CSS3",
+      "HTML 5",
+      "CSS 3",
     ];
     let index = 0;
     function showNextSkill() {
@@ -28,8 +29,8 @@ class Banner extends Component {
     setInterval(showNextSkill, 1300);
 
     return (
-      <div>
-        <div className="lg:flex justify-between items-center p-8 ">
+      <div className="lg:mx-16">
+        <div className="lg:flex justify-between justify-center-center p-8 ">
           <div>
             <h3 className="text-4xl font-semibold">
               Hi EveryOne, I'm <br />{" "}
@@ -43,6 +44,53 @@ class Banner extends Component {
             <div id="slider" className="text-[#c0392b] text-6xl font-bold">
               <div>{showNextSkill}</div>
             </div>
+            <br />
+            <div className=" flex text-6xl">
+              <div className="mx-8 hover:text-black">
+                <a
+                  href="https://github.com/Hasan-Al-Banna-Nahid"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaGithub />
+                </a>
+              </div>
+              <div className="mx-8 hover:text-[#0072b1]">
+                <a
+                  href="https://www.linkedin.com/in/hasan-al-banna-84390b276/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <FaLinkedin />
+                </a>
+              </div>
+              <div className="mx-8 hover:text-[#F4B400]">
+                <a href="mailto:IamNahid591998@gmail.com">
+                  <FaMailBulk />
+                </a>
+              </div>
+            </div>
+            <br />
+            <div className="flex ">
+              <div className="mx-6 text-4xl">
+                <a href="">
+                  <button className="btn btn-outline btn-accent">
+                    Contact Me
+                  </button>
+                </a>
+              </div>
+              <div className="text-4xl ">
+                <a
+                  href="https://drive.google.com/file/d/1dMqqXmnDqiwGpw3TPGMLg0mYNL2_jAlI/view?usp=share_link"
+                  target="blank"
+                  rel="noreferrer"
+                >
+                  <button className="btn btn-outline btn-secondary w-28">
+                    Resume
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
           <div>
             <div className="svg-container">
@@ -51,7 +99,7 @@ class Banner extends Component {
                 data-name="Layer 1"
                 width="711.1879"
                 height="669.68268"
-                viewBox="0 0 800 600"
+                viewBox="0 0 1300 1100"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
               >
                 <title>feeling_proud</title>

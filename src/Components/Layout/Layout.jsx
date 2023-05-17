@@ -2,6 +2,8 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import Banner from "../Banner/Banner";
+import WhatIDo from "../What I Do/WhatIDo";
+import Proficiency from "../Proficiency/Proficiency";
 
 class Layout extends Component {
   render() {
@@ -9,6 +11,8 @@ class Layout extends Component {
       <div>
         <Header />
         <Banner />
+        <WhatIDo />
+        <Proficiency />
       </div>
     );
   }

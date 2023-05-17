@@ -1,0 +1,12 @@
+.technology {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+@media screen and (max-width: 576px) {
+  .technology {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 5px;
+  }
+}
