@@ -5,8 +5,14 @@ import "./Proficiency.css";
 class Proficiency extends Component {
   render() {
     return (
-      <div>
-        <h2 className="text-4xl font-bold  text-center my-8">Proficiency</h2>
+      <div
+        data-aos="fade-down-left"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <div data-aos="zoom-in">
+          <h2 className="text-4xl font-bold  text-center my-8">Proficiency</h2>
+        </div>
         <div className="proficiency">
           <div>
             <h1 className="text-2xl font-semibold">
@@ -53,7 +59,7 @@ class Proficiency extends Component {
               Tailwind CSS :{" "}
               <progress
                 className="progress progress-secondary w-56"
-                value="70"
+                value="90"
                 max="100"
               ></progress>
             </h1>

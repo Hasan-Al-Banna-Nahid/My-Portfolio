@@ -4,11 +4,15 @@ import React, { Component } from "react";
 class Education extends Component {
   render() {
     return (
-      <div>
+      <div data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">
         <h1 className="text-4xl font-bold text-[#130f40] text-center my-6">
           Education
         </h1>
-        <div>
+        <div
+          data-aos="fade-down-right"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+        >
           <div className="card w-96 glass mx-auto">
             <figure>
               <img

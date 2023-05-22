@@ -72,11 +72,12 @@ class Header extends Component {
                 </li>
               </ul>
             </div>
+
             <a className="btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]">
               {leftAngle} Hasan Al Banna{rightAngle}
             </a>
           </div>
-          <div className="navbar-center hidden lg:flex">
+          <div data-aos="zoom-in-down" className="navbar-center hidden lg:flex">
             <ul
               id="menu"
               className="menu menu-horizontal px-1 font-medium text-2xl"
@@ -94,7 +95,7 @@ class Header extends Component {
               </li>
             </ul>
           </div>
-          <div className="navbar-end text-4xl">
+          <div data-aos="zoom-out-left" className="navbar-end text-4xl">
             <div onClick={this.handleToggle}>
               {!this.state.isClicked ? (
                 <FaToggleOff className="toggleOff" onClick={this.darkMode} />

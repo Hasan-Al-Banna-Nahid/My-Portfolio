@@ -8,7 +8,7 @@ class Contact extends Component {
     const leftAngle = "<";
     const rightAngle = " />";
     return (
-      <div>
+      <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
         <h2 className="text-center text-4xl my-6 font-bold text-[#130f40]">
           Contact Me
         </h2>
@@ -17,7 +17,12 @@ class Contact extends Component {
           INBOX IS OPEN FOR ALL. <br /> +8801896085259 <br />{" "}
           IamNahid591998@gmail.com
         </h2>
-        <div className=" flex text-6xl social-icons">
+        <div
+          data-aos="fade-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className=" flex text-6xl social-icons"
+        >
           <div className="mx-8 hover:text-black">
             <a
               href="https://github.com/Hasan-Al-Banna-Nahid"
