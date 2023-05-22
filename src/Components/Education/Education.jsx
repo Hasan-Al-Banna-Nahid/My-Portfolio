@@ -15,10 +15,7 @@ class Education extends Component {
         >
           <div className="card w-96 glass mx-auto">
             <figure>
-              <img
-                src="../../../public/images-removebg-preview.png"
-                alt="NIT!"
-              />
+              <img src="../images-removebg-preview.png" alt="NIT!" />
             </figure>
             <div className="card-body">
               <h2 className="card-title font-semibold">

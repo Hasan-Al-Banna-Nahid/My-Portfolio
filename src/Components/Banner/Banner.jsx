@@ -95,12 +95,7 @@ class Banner extends Component {
             </div>
           </div>
           <div>
-            <div
-              className="svg-container"
-              data-aos="fade-left"
-              data-aos-offset="500"
-              data-aos-duration="1500"
-            >
+            <div>
               <img src="../undraw_feeling_proud_qne1.png" alt="" />
             </div>
           </div>
