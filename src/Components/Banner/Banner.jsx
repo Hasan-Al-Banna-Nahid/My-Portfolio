@@ -35,7 +35,7 @@ class Banner extends Component {
             data-aos-duration="1500"
           >
             <h3 className="text-4xl font-semibold">
-              Hi EveryOne, I'm <br />{" "}
+              Hi EveryOne,👋 I'm <br />{" "}
               <span className="common ms-6 name">Hasan Al Banna</span>
             </h3>
             <p id="intro" className="text-2xl  font-medium">
@@ -83,7 +83,7 @@ class Banner extends Component {
               </div>
               <div className="text-4xl ">
                 <a
-                  href="https://drive.google.com/file/d/1dMqqXmnDqiwGpw3TPGMLg0mYNL2_jAlI/view?usp=share_link"
+                  href="https://drive.google.com/file/d/12rEBHnOff77JLLtaFOgZWSiY2g5-FFJv/view?usp=sharing"
                   target="blank"
                   rel="noreferrer"
                 >
@@ -95,7 +95,7 @@ class Banner extends Component {
             </div>
           </div>
           <div>
-            <div>
+            <div className="my-2">
               <img src="../undraw_feeling_proud_qne1.png" alt="" />
             </div>
           </div>

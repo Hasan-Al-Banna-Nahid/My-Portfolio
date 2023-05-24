@@ -9,9 +9,7 @@ class Contact extends Component {
     const rightAngle = " />";
     return (
       <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-        <h2 className="text-center text-4xl my-6 font-bold text-[#130f40]">
-          Contact Me
-        </h2>
+        <h2 className="text-center text-4xl my-6 font-bold ">Contact Me</h2>
         <h2 className="text-2xl font-semibold text-center">
           Contact Me ☎️ DISCUSS A PROJECT OR JUST WANT TO SAY HI? <br /> MY
           INBOX IS OPEN FOR ALL. <br /> +8801896085259 <br />{" "}

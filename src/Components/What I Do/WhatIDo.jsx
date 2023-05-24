@@ -9,7 +9,14 @@ import {
   DiHtml5,
   DiCss3,
 } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
+import {
+  FaBootstrap,
+  FaDatabase,
+  FaNode,
+  FaJsSquare,
+  FaFire,
+  FaCss3,
+} from "react-icons/fa";
 import "./WhatIDo.css";
 
 class WhatIDo extends Component {
@@ -38,27 +45,35 @@ class WhatIDo extends Component {
           >
             <div>
               <DiReact className="text-7xl hover:text-[#61dbfb]" />
+              <h3 className="font-semibold">React JS</h3>
             </div>
             <div>
-              <DiNodejs className="text-7xl hover:text-[#215732]" />
+              <FaNode className="text-7xl hover:text-[#215732]" />
+              <h3 className="font-semibold">Express JS</h3>
             </div>
             <div>
-              <DiMongodb className="text-7xl hover:text-[#589636]" />
+              <FaDatabase className="text-7xl hover:text-[#589636]" />
+              <h3 className="font-semibold">Mongo DB</h3>
             </div>
             <div>
-              <DiJsBadge className="text-7xl hover:text-[#f0db4f]" />
+              <FaJsSquare className="text-7xl hover:text-[#f0db4f]" />
+              <h3 className="font-semibold">JavaScript</h3>
             </div>
             <div>
-              <DiFirebase className="text-7xl hover:text-[#FFA611]" />
+              <FaFire className="text-7xl hover:text-[#f0db4f]" />
+              <h3 className="font-semibold">Firebase</h3>
             </div>
             <div>
               <DiHtml5 className="text-7xl hover:text-[#f06529]" />
+              <h3 className="font-semibold ms-2">HTML</h3>
             </div>
             <div>
-              <DiCss3 className="text-7xl hover:text-[#2965f1]" />
+              <FaCss3 className="text-7xl hover:text-[#2965f1]" />
+              <h3 className="font-semibold ms-2">CSS</h3>
             </div>
             <div>
               <FaBootstrap className="text-7xl hover:text-[#0d6efd]" />
+              <h3 className="font-semibold">Bootstrap</h3>
             </div>
           </div>
         </div>
