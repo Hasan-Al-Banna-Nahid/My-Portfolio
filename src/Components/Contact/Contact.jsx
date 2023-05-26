@@ -8,6 +8,37 @@ import withReactContent from "sweetalert2-react-content";
 
 const MySwal = withReactContent(Swal);
 class Contact extends Component {
+  handleForm = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const phone = parseInt(form.phone.value);
+    const message = form.message.value;
+    const data = {
+      name,
+      email,
+      phone,
+      message,
+    };
+    fetch("https://personal-one-ochre.vercel.app/user", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        form.reset();
+
+        MySwal.fire(
+          "Good job!",
+          "Your Message Has Been Successfully sent to Hasan!",
+          "success"
+        );
+      });
+  };
   render() {
     const leftAngle = "<";
     const rightAngle = " />";
@@ -15,7 +46,10 @@ class Contact extends Component {
       <div>
         <Header />
         <div>
-          <div className="hero min-h-screen bg-base-200">
+          <form
+            onSubmit={this.handleForm}
+            className="hero min-h-screen bg-base-200"
+          >
             <div className="hero-content flex-col lg:flex-row-reverse">
               <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                 <div className="card-body">
@@ -24,11 +58,23 @@ class Contact extends Component {
                   </h2>
                   <div className="form-control">
                     <label className="label">
+                      <span className="label-text font-bold">Name</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      name="name"
+                      className="input input-bordered"
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
                       <span className="label-text font-bold">Email</span>
                     </label>
                     <input
                       type="text"
                       placeholder="email"
+                      name="email"
                       className="input input-bordered"
                     />
                   </div>
@@ -39,6 +85,7 @@ class Contact extends Component {
                     <input
                       type="number"
                       placeholder="Contact Number"
+                      name="phone"
                       className="input input-bordered"
                     />
                   </div>
@@ -60,7 +107,7 @@ class Contact extends Component {
                 </div>
               </div>
             </div>
-          </div>
+          </form>
         </div>
         <div>
           <div
