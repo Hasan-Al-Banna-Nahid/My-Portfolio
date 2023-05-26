@@ -60,23 +60,23 @@ class Header extends Component {
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <a>Skills</a>
+                  <a href="#skills">Skills</a>
                 </li>
                 <li
                   tabIndex={0}
                   className="common-nav"
                   style={{ color: "#130f40" }}
                 >
-                  <a className="justify-between hover:underline hover:text-[#8854d0]">
-                    Work Experience
-                  </a>
+                  <Link to="/Experience">
+                    {" "}
+                    <a>Work Experience</a>
+                  </Link>
                 </li>
                 <li
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <Link>
-                    {" "}
+                  <Link to="/contact">
                     <a>Contact Me</a>
                   </Link>
                 </li>
@@ -84,8 +84,7 @@ class Header extends Component {
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <Link>
-                    {" "}
+                  <Link to="/about">
                     <a>About Me</a>
                   </Link>
                 </li>
