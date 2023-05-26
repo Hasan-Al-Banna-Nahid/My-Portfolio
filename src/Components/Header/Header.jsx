@@ -9,6 +9,7 @@ class Header extends Component {
     super(props);
     this.state = {
       isClicked: false,
+      isActive: false,
     };
   }
   handleToggle = () => {
@@ -16,6 +17,7 @@ class Header extends Component {
       isClicked: !this.state.isClicked,
     });
   };
+
   darkMode(params) {
     document.body.style.backgroundColor = "#130f40";
     document.body.style.color = "#ffffff";
@@ -23,14 +25,14 @@ class Header extends Component {
   }
   lightMode() {
     document.body.style.color = "#130f40";
-    document.body.style.backgroundColor = "";
+    document.body.style.backgroundColor = "#ECF0F3";
   }
   render() {
     const leftAngle = "<";
     const rightAngle = " />";
     return (
       <div>
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-[#ECF0F3]">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -54,7 +56,10 @@ class Header extends Component {
                 tabIndex={0}
                 className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li className="common-nav" style={{ color: "#130f40" }}>
+                <li
+                  className="common-nav hover:underline hover:text-[#8854d0]"
+                  style={{ color: "#130f40" }}
+                >
                   <a>Skills</a>
                 </li>
                 <li
@@ -62,35 +67,61 @@ class Header extends Component {
                   className="common-nav"
                   style={{ color: "#130f40" }}
                 >
-                  <a className="justify-between">Work Experience</a>
+                  <a className="justify-between hover:underline hover:text-[#8854d0]">
+                    Work Experience
+                  </a>
                 </li>
-                <li className="common-nav" style={{ color: "#130f40" }}>
+                <li
+                  className="common-nav hover:underline hover:text-[#8854d0]"
+                  style={{ color: "#130f40" }}
+                >
                   <Link>
                     {" "}
                     <a>Contact Me</a>
                   </Link>
                 </li>
+                <li
+                  className="common-nav hover:underline hover:text-[#8854d0]"
+                  style={{ color: "#130f40" }}
+                >
+                  <Link>
+                    {" "}
+                    <a>About Me</a>
+                  </Link>
+                </li>
               </ul>
             </div>
 
-            <a className="btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]">
+            <Link
+              to="/"
+              className="btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]"
+            >
               {leftAngle} Hasan Al Banna{rightAngle}
-            </a>
+            </Link>
           </div>
           <div data-aos="zoom-in-down" className="navbar-center hidden lg:flex">
             <ul
               id="menu"
-              className="menu menu-horizontal px-1 font-medium text-2xl"
+              className="menu menu-horizontal px-4 ms-12 font-semibold text-2xl"
             >
-              <li className="common-nav">
-                <a>Skills</a>
+              <li className="common-nav hover:underline hover:text-[#8854d0]">
+                {" "}
+                <a href="#skills">Skills</a>
               </li>
-              <li className="common-nav">
-                <a>Work Experience</a>
+              <li className="common-nav hover:underline hover:text-[#8854d0]">
+                <Link to="/Experience">
+                  {" "}
+                  <a>Work Experience</a>
+                </Link>
               </li>
-              <li className="common-nav">
+              <li className="common-nav hover:underline hover:text-[#8854d0]">
                 <Link to="/contact">
                   <a>Contact Me</a>
+                </Link>
+              </li>
+              <li className="common-nav hover:underline hover:text-[#8854d0]">
+                <Link to="/about">
+                  <a>About Me</a>
                 </Link>
               </li>
             </ul>

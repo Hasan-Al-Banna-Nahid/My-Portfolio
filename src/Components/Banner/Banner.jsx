@@ -27,21 +27,24 @@ class Banner extends Component {
     const intro = document.getElementById("intro");
 
     return (
-      <div className="lg:mx-16">
+      <div className="lg:mx-16 banner">
         <div className="lg:flex justify-between justify-center-center p-8 ">
           <div
             data-aos="zoom-in-down"
             data-aos-easing="linear"
             data-aos-duration="1500"
+            className="mx-auto"
           >
-            <h3 className="text-4xl font-semibold">
+            <h3 className="text-4xl font-bold">
               Hi EveryOne,👋 I'm <br />{" "}
-              <span className="common ms-6 name">Hasan Al Banna</span>
+              <span className="common ms-6 name text-[#c44569]">
+                Hasan Al Banna
+              </span>
             </h3>
-            <p id="intro" className="text-2xl  font-medium">
-              A passionate Front End Software Developer 🚀 <br /> having an
-              experience of building Modern Web applications with some cool
-              libraries and frameworks.
+            <p id="intro" className="text-3xl  font-bold">
+              A passionate Front End Software Engineer 🚀 <br /> having an
+              experience of building Modern Web Applications with some cool
+              Libraries and Frameworks.
             </p>
             <div id="slider" className="text-[#c0392b] text-6xl font-bold">
               <div>{showNextSkill}</div>
