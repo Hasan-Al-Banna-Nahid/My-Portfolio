@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <div>
       <Header />
-      <div className="flex">
+      <div className="flex md:flex-row flex-col-reverse">
         <div>
           <div className="container ">
             <h2 className="text-3xl font-bold text-center my-6 text-[#3867d6]">
