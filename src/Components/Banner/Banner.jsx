@@ -86,7 +86,7 @@ class Banner extends Component {
               </div>
               <div className="text-4xl ">
                 <a
-                  href="https://drive.google.com/file/d/1LOkGMUMTevWVEAOsEj9RrJjrDSj4lwXG/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1LOkGMUMTevWVEAOsEj9RrJjrDSj4lwXG/view?usp=sharing"
                   target="blank"
                   rel="noreferrer"
                 >
