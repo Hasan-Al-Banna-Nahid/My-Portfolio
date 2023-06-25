@@ -9,37 +9,6 @@ import Footer from "../Footer/Footer";
 
 const MySwal = withReactContent(Swal);
 class Contact extends Component {
-  handleForm = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    const name = form.name.value;
-    const email = form.email.value;
-    const phone = parseInt(form.phone.value);
-    const message = form.message.value;
-    const data = {
-      name,
-      email,
-      phone,
-      message,
-    };
-    fetch("https://portfolio-six-opal.vercel.app/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        form.reset();
-
-        MySwal.fire(
-          "Good job!",
-          "Your Message Has Been Successfully sent to Hasan!",
-          "success"
-        );
-      });
-  };
   render() {
     return (
       <div>
