@@ -51,7 +51,11 @@ class Contact extends Component {
                 </a>
               </div>
               <div className="mx-8 hover:text-[#F4B400]">
-                <a href="mailto:IamNahid591998@gmail.com">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="mailto:IamNahid591998@gmail.com"
+                >
                   <FaMailBulk />
                 </a>
               </div>
