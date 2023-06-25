@@ -44,71 +44,7 @@ class Contact extends Component {
     return (
       <div>
         <Header />
-        <div>
-          <form
-            onSubmit={this.handleForm}
-            className="hero min-h-screen bg-transparent"
-          >
-            <div className="hero-content flex-col lg:flex-row-reverse">
-              <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                <div className="card-body">
-                  <h2 className="text-1xl font-bold text-center text-[#c44569]">
-                    Want To Some Chat With Me!
-                  </h2>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text font-bold">Name</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      name="name"
-                      className="input input-bordered"
-                    />
-                  </div>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text font-bold">Email</span>
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="email"
-                      name="email"
-                      className="input input-bordered"
-                    />
-                  </div>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text font-bold">Phone</span>
-                    </label>
-                    <input
-                      type="number"
-                      placeholder="Contact Number"
-                      name="phone"
-                      className="input input-bordered"
-                    />
-                  </div>
-                  <div className="form-control">
-                    <label className="label">
-                      <span className="label-text font-bold">Your Message</span>
-                    </label>
-                    <textarea
-                      name="message"
-                      id=""
-                      className="p-4"
-                      cols="30"
-                      rows="10"
-                      placeholder="Say Something!"
-                    ></textarea>
-                  </div>
-                  <div className="form-control mt-6">
-                    <button className="btn btn-primary">Send</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+
         <div>
           <div
             data-aos="fade-up"
