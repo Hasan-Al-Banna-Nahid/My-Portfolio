@@ -11,6 +11,7 @@ import {
   FaCode,
 } from "react-icons/fa";
 import { DiReact, DiHtml5 } from "react-icons/di";
+import Footer from "../Footer/Footer";
 
 const AboutMe = () => {
   return (
@@ -120,7 +121,13 @@ const AboutMe = () => {
                 </p>
               </div>
               <div className="skill">
-                <FaCode className="text-7xl font-bold text-[#0d6efd]" />
+                {/* <FaCode className="text-7xl font-bold text-[#0d6efd]" /> */}
+                <img
+                  width={80}
+                  height={80}
+                  src="/tailwind-css-icon.png"
+                  alt=""
+                />
                 <h3 className="text-2xl font-semibold text-[#0d6efd]">
                   Tailwind CSS
                 </h3>
@@ -167,9 +174,14 @@ const AboutMe = () => {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title font-semibold">
-                    National Institute Of Technology
+                    College : National Institute Of Technology
                   </h2>
-                  <p className="font-semibold">Computer Science & Technology</p>
+                  <h2 className="card-title font-semibold">
+                    Degree : Diploma-In-Engineering
+                  </h2>
+                  <p className="font-semibold">
+                    Subject : Computer Science & Technology
+                  </p>
                   <div className="card-actions">
                     <button className="btn btn-primary">2019 - Present</button>
                   </div>
@@ -179,6 +191,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

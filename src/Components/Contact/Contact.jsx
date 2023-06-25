@@ -5,6 +5,7 @@ import "./Contact.css";
 import Header from "../Header/Header";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
+import Footer from "../Footer/Footer";
 
 const MySwal = withReactContent(Swal);
 class Contact extends Component {
@@ -40,8 +41,6 @@ class Contact extends Component {
       });
   };
   render() {
-    const leftAngle = "<";
-    const rightAngle = " />";
     return (
       <div>
         <Header />
@@ -96,6 +95,7 @@ class Contact extends Component {
                     <textarea
                       name="message"
                       id=""
+                      className="p-4"
                       cols="30"
                       rows="10"
                       placeholder="Say Something!"
@@ -151,13 +151,9 @@ class Contact extends Component {
                 </a>
               </div>
             </div>
-            <div>
-              <a className="btn btn-ghost normal-case my-6 text-4xl text-center name font-bold ">
-                {leftAngle} Hasan Al Banna{rightAngle}
-              </a>
-            </div>
           </div>
         </div>
+        <Footer />
       </div>
     );
   }

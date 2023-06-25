@@ -1,6 +1,7 @@
 /* esdivnt-disable no-unused-vars */
 import { FaStrava } from "react-icons/fa";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Experience = () => {
   return (
@@ -124,7 +125,7 @@ const Experience = () => {
         </div>
         <div></div>
       </div>
-      <footer />
+      <Footer />
     </div>
   );
 };

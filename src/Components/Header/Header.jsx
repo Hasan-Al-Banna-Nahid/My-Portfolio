@@ -32,7 +32,7 @@ class Header extends Component {
     const rightAngle = " />";
     return (
       <div>
-        <div className="navbar bg-[#ECF0F3]">
+        <div className="navbar bg-[#ECF0F3] text-[#130f40] font-bold">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ class Header extends Component {
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <a href="#skills">Skills</a>
+                  <a href="#skills">Projects</a>
                 </li>
                 <li
                   tabIndex={0}
@@ -69,7 +69,7 @@ class Header extends Component {
                 >
                   <Link to="/Experience">
                     {" "}
-                    <a>Work Experience</a>
+                    <a> Experience</a>
                   </Link>
                 </li>
                 <li
@@ -93,7 +93,7 @@ class Header extends Component {
 
             <Link
               to="/"
-              className="btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]"
+              className="text-[#b71540] btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]"
             >
               {leftAngle} Hasan Al Banna{rightAngle}
             </Link>
@@ -105,12 +105,12 @@ class Header extends Component {
             >
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 {" "}
-                <a href="#skills">Skills</a>
+                <a href="#skills">Projects</a>
               </li>
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 <Link to="/Experience">
                   {" "}
-                  <a>Work Experience</a>
+                  <a> Experience</a>
                 </Link>
               </li>
               <li className="common-nav hover:underline hover:text-[#8854d0]">

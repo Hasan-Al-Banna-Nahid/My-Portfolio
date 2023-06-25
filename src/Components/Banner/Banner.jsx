@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./Banner.css";
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Header from "../Header/Header";
+import { Link } from "react-router-dom";
 
 class Banner extends Component {
   render() {
@@ -20,7 +21,7 @@ class Banner extends Component {
     let index = 0;
     function showNextSkill() {
       const slider = document.getElementById("slider");
-      slider.textContent = skills[index];
+      slider.innerHTML = skills[index];
       index = (index + 1) % skills.length;
     }
     setInterval(showNextSkill, 1300);
@@ -70,7 +71,11 @@ class Banner extends Component {
                 </a>
               </div>
               <div className="mx-8 hover:text-[#F4B400]">
-                <a href="mailto:IamNahid591998@gmail.com">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="mailto:IamNahid591998@gmail.com"
+                >
                   <FaMailBulk />
                 </a>
               </div>
@@ -78,11 +83,11 @@ class Banner extends Component {
             <br />
             <div className="flex ">
               <div className="mx-6 text-4xl">
-                <a href="">
+                <Link to="/contact">
                   <button className="btn btn-outline btn-accent">
                     Contact Me
                   </button>
-                </a>
+                </Link>
               </div>
               <div className="text-4xl ">
                 <a

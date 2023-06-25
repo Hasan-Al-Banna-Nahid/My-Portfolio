@@ -11,7 +11,7 @@ const Home = () => {
       <Header />
       <Banner />
       <Skills />
-      <Proficiency />
+      {/* <Proficiency /> */}
     </div>
   );
 };

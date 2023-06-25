@@ -22,7 +22,7 @@ import "./Skills.css";
 class Skills extends Component {
   render() {
     return (
-      <div className="grid lg:grid-cols-2 lg:gap-4" id="skills">
+      <div className="my-6 grid lg:grid-cols-2 lg:gap-4" id="skills">
         <div
           className="lg:ms-32"
           data-aos="fade-right"
@@ -33,9 +33,9 @@ class Skills extends Component {
         </div>
         <div data-aos="zoom-in-up">
           <h2 className="text-5xl font-semibold my-4 ps-4">Skills?</h2>
-          <p className="text-lg font-medium  my-5 ps-4">
-            CRAZY Front End DEVELOPER WHO
-            <br /> WANTS TO EXPLORE EVERY TECH STACK
+          <p className="text-lg font-bold  my-5 ps-4">
+            Crazy Front End Developer Who
+            <br /> Wants To Explore Every Tech Stack
           </p>
           <div
             className="technology"
@@ -45,35 +45,39 @@ class Skills extends Component {
           >
             <div>
               <DiReact className="text-7xl hover:text-[#61dbfb] " />
-              <h3 className="font-semibold">React JS</h3>
+              <h3 className="font-bold">React JS</h3>
             </div>
             <div>
               <FaNode className="text-7xl hover:text-[#215732]" />
-              <h3 className="font-semibold">Express JS</h3>
+              <h3 className="font-bold">Express JS</h3>
             </div>
             <div>
               <FaDatabase className="text-7xl hover:text-[#589636]" />
-              <h3 className="font-semibold">Mongo DB</h3>
+              <h3 className="font-bold">Mongo DB</h3>
             </div>
             <div>
               <FaJsSquare className="text-7xl hover:text-[#f0db4f]" />
-              <h3 className="font-semibold">JavaScript</h3>
+              <h3 className="font-bold">JavaScript</h3>
             </div>
             <div>
               <FaFire className="text-7xl hover:text-[#f0db4f]" />
-              <h3 className="font-semibold">Firebase</h3>
+              <h3 className="font-bold">Firebase</h3>
             </div>
             <div>
               <DiHtml5 className="text-7xl hover:text-[#f06529]" />
-              <h3 className="font-semibold ms-2">HTML</h3>
+              <h3 className="font-bold ms-2">HTML</h3>
             </div>
             <div>
               <FaCss3 className="text-7xl hover:text-[#2965f1]" />
-              <h3 className="font-semibold ms-2">CSS</h3>
+              <h3 className="font-bold ms-2">CSS</h3>
             </div>
             <div>
               <FaBootstrap className="text-7xl hover:text-[#0d6efd]" />
-              <h3 className="font-semibold">Bootstrap</h3>
+              <h3 className="font-bold">Bootstrap</h3>
+            </div>
+            <div>
+              <img width={80} height={80} src="public/t.png" alt="" />
+              <h3 className="font-bold">Tailwind</h3>
             </div>
           </div>
         </div>
