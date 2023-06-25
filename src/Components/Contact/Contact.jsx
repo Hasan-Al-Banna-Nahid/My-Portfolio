@@ -47,7 +47,7 @@ class Contact extends Component {
         <div>
           <form
             onSubmit={this.handleForm}
-            className="hero min-h-screen bg-base-200"
+            className="hero min-h-screen bg-transparent"
           >
             <div className="hero-content flex-col lg:flex-row-reverse">
               <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

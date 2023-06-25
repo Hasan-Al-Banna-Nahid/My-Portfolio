@@ -34,7 +34,7 @@ class Skills extends Component {
         <div data-aos="zoom-in-up">
           <h2 className="text-5xl font-semibold my-4 ps-4">Skills?</h2>
           <p className="text-lg font-bold  my-5 ps-4">
-            Crazy Front End Developer Who
+            Passionate Front End Developer Who
             <br /> Wants To Explore Every Tech Stack
           </p>
           <div

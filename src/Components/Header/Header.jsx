@@ -32,7 +32,7 @@ class Header extends Component {
     const rightAngle = " />";
     return (
       <div>
-        <div className="navbar bg-[#ECF0F3] text-[#130f40] font-bold">
+        <div className="navbar bg-base-300 text-[#130f40] font-bold">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -60,7 +60,7 @@ class Header extends Component {
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <a href="#skills">Projects</a>
+                  <Link to="projects">Projects</Link>
                 </li>
                 <li
                   tabIndex={0}
@@ -105,7 +105,7 @@ class Header extends Component {
             >
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 {" "}
-                <a href="#skills">Projects</a>
+                <Link to="projects">Projects</Link>
               </li>
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 <Link to="/Experience">
