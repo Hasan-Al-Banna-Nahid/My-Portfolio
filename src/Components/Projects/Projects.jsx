@@ -14,14 +14,7 @@ const Projects = () => {
       <div className="grid md:grid-cols-3">
         {/* Card 1 */}
         <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
-          <Carousel
-            className="w-[400px]"
-            autoPlay
-            infiniteLoop
-            interval={1000}
-            width={380}
-            dynamicHeight={380}
-          >
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
             <div>
               <img src="/dev1.png" />
             </div>
@@ -85,14 +78,7 @@ const Projects = () => {
 
         {/* Card 2 */}
         <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
-          <Carousel
-            className="w-[400px]"
-            autoPlay
-            infiniteLoop
-            interval={1000}
-            width={380}
-            dynamicHeight={380}
-          >
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
             <div>
               <img src="/toy1.png" />
             </div>
@@ -176,14 +162,7 @@ const Projects = () => {
         {/* Card 2 */}
         {/* Card 3 */}
         <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
-          <Carousel
-            className="w-[400px]"
-            autoPlay
-            infiniteLoop
-            interval={1000}
-            width={380}
-            dynamicHeight={380}
-          >
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
             <div>
               <img src="/v1.png" />
             </div>
@@ -234,6 +213,11 @@ const Projects = () => {
             <li className="font-bold text-slate-800">
               In Admin Dashboard Admin dashboard admin can make instructor and
               update the classes ststus and delete them
+            </li>{" "}
+            <li className="font-bold text-slate-800">
+              <span>
+                Admin Pass : Iamnahid591998@outlook.com / 123456Hasan$$
+              </span>
             </li>{" "}
             <div className="card-actions">
               <button className="btn btn-primary">

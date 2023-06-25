@@ -60,7 +60,7 @@ class Header extends Component {
                   className="common-nav hover:underline hover:text-[#8854d0]"
                   style={{ color: "#130f40" }}
                 >
-                  <Link to="projects">Projects</Link>
+                  <Link to="/projects">Projects</Link>
                 </li>
                 <li
                   tabIndex={0}
@@ -105,7 +105,7 @@ class Header extends Component {
             >
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 {" "}
-                <Link to="projects">Projects</Link>
+                <Link to="/projects">Projects</Link>
               </li>
               <li className="common-nav hover:underline hover:text-[#8854d0]">
                 <Link to="/Experience">

@@ -22,7 +22,7 @@ class Contact extends Component {
       phone,
       message,
     };
-    fetch("https://personal-iamnahid591998-gmailcom.vercel.app/user", {
+    fetch("https://portfolio-six-opal.vercel.app/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

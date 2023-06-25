@@ -76,7 +76,7 @@ class Skills extends Component {
               <h3 className="font-bold">Bootstrap</h3>
             </div>
             <div>
-              <img width={80} height={80} src="public/t.png" alt="" />
+              <img width={80} height={80} src="/t.png" alt="" />
               <h3 className="font-bold">Tailwind</h3>
             </div>
           </div>
