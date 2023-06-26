@@ -6,10 +6,25 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import { FaEye, FaGithub } from "react-icons/fa";
+import AnimatedCursor from "react-animated-cursor";
 
 const Projects = () => {
   return (
     <div>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
+        outerStyle={{
+          border: "3px solid var(--cursor-color)",
+        }}
+      />
       <Header />
       <h2 className="text-3xl font-bold text-center my-6">Projects</h2>
       <div className="grid md:grid-cols-3">

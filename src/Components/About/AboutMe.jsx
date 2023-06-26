@@ -12,10 +12,25 @@ import {
 } from "react-icons/fa";
 import { DiReact, DiHtml5 } from "react-icons/di";
 import Footer from "../Footer/Footer";
+import AnimatedCursor from "react-animated-cursor";
 
 const AboutMe = () => {
   return (
     <div>
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
+        outerStyle={{
+          border: "3px solid var(--cursor-color)",
+        }}
+      />
       <Header />
       <div className="flex md:flex-row flex-col-reverse">
         <div>

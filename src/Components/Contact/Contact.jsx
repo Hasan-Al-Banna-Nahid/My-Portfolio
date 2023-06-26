@@ -6,12 +6,27 @@ import Header from "../Header/Header";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import Footer from "../Footer/Footer";
+import AnimatedCursor from "react-animated-cursor";
 
 const MySwal = withReactContent(Swal);
 class Contact extends Component {
   render() {
     return (
       <div>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "3px solid var(--cursor-color)",
+          }}
+        />
         <Header />
 
         <div>

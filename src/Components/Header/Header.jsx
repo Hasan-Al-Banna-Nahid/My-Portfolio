@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import "./Header.css";
 import { FaToggleOn, FaToggleOff } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor";
 
 class Header extends Component {
   constructor(props) {
@@ -32,6 +33,20 @@ class Header extends Component {
     const rightAngle = " />";
     return (
       <div>
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "3px solid var(--cursor-color)",
+          }}
+        />
         <div className="navbar bg-base-300 text-[#130f40] font-bold">
           <div className="navbar-start">
             <div className="dropdown">

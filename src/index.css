@@ -12,3 +12,10 @@ body {
     overflow-x: hidden;
   }
 }
+html {
+  --cursor-color: #8f67eb;
+}
+
+html.dark-mode {
+  --cursor-color: #fff;
+}

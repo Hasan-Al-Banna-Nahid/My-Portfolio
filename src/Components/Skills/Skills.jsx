@@ -18,18 +18,34 @@ import {
   FaCss3,
 } from "react-icons/fa";
 import "./Skills.css";
+import AnimatedCursor from "react-animated-cursor";
 
 class Skills extends Component {
   render() {
     return (
       <div className="my-6 grid lg:grid-cols-2 lg:gap-4" id="skills">
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "3px solid var(--cursor-color)",
+          }}
+        />
         <div
           className="lg:ms-32"
           data-aos="fade-right"
           data-aos-offset="300"
           data-aos-easing="ease-in-sine"
         >
-          <img src="../undraw_software_engineer_re_tnjc.png" alt="" />
+          {/* <img src="../undraw_software_engineer_re_tnjc.png" alt="" /> */}
+          <img src="../undraw_feeling_proud_qne1.png" alt="" />
         </div>
         <div data-aos="zoom-in-up">
           <h2 className="text-5xl font-semibold my-4 ps-4">Skills?</h2>

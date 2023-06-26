@@ -4,6 +4,7 @@ import "./Banner.css";
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
+import AnimatedCursor from "react-animated-cursor";
 
 class Banner extends Component {
   render() {
@@ -29,6 +30,20 @@ class Banner extends Component {
 
     return (
       <div className="lg:mx-16 banner">
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: "var(--cursor-color)",
+          }}
+          outerStyle={{
+            border: "3px solid var(--cursor-color)",
+          }}
+        />
         <div className="lg:flex justify-between justify-center-center p-8 ">
           <div
             data-aos="zoom-in-down"
@@ -104,7 +119,8 @@ class Banner extends Component {
           </div>
           <div>
             <div className="my-2">
-              <img src="../undraw_feeling_proud_qne1.png" alt="" />
+              {/* <img src="../undraw_feeling_proud_qne1.png" alt="" /> */}
+              <img src="../../../public/76616-programming.gif" alt="" />
             </div>
           </div>
         </div>
