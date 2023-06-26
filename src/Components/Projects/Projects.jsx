@@ -5,6 +5,7 @@ import Footer from "../Footer/Footer";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
+import { FaEye, FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
@@ -58,12 +59,14 @@ const Projects = () => {
               Details Button Which Show Job Details In the Another Page.
             </li>
             <div className="card-actions">
-              <button className="btn btn-primary">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />
                 <Link to="https://developercareer.netlify.app/" target="_blank">
                   Live Site
                 </Link>
               </button>
               <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
                 <Link
                   to="https://github.com/Hasan-Al-Banna-Nahid/Developer-Career-React"
                   target="_blank"
@@ -130,17 +133,20 @@ const Projects = () => {
               after login user can see logOut icon which for signOut
             </li>
             <div className="card-actions">
-              <button className="btn btn-primary">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
                 <Link to="https://toyman.netlify.app/" target="_blank">
                   Live Site
                 </Link>
               </button>
-              <button className="btn btn-primary">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
                 <Link to="https://toyman.vercel.app/" target="_blank">
                   Live Site(Server)
                 </Link>
               </button>
               <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
                 <Link
                   to="https://github.com/Hasan-Al-Banna-Nahid/Toy-Man-React-Firebase-Express-Mongo"
                   target="_blank"
@@ -149,6 +155,7 @@ const Projects = () => {
                 </Link>
               </button>
               <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
                 <Link
                   to="https://github.com/Hasan-Al-Banna-Nahid/Toy-Man-ServerSide"
                   target="_blank"
@@ -220,13 +227,15 @@ const Projects = () => {
               </span>
             </li>{" "}
             <div className="card-actions">
-              <button className="btn btn-primary">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
                 <Link to="https://summer-camp-f4fcb.web.app/" target="_blank">
                   Live Site
                 </Link>
               </button>
 
               <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
                 <Link
                   to="https://github.com/Hasan-Al-Banna-Nahid/Summer-Camp"
                   target="_blank"
@@ -235,6 +244,7 @@ const Projects = () => {
                 </Link>
               </button>
               <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
                 <Link
                   to="https://github.com/Hasan-Al-Banna-Nahid/Summer-Camp-Server"
                   target="_blank"
