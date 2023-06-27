@@ -17,6 +17,9 @@ import {
   FaFire,
   FaCss3,
 } from "react-icons/fa";
+import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiRedux, SiReactquery } from "react-icons/si";
 import "./Skills.css";
 import AnimatedCursor from "react-animated-cursor";
 
@@ -76,6 +79,14 @@ class Skills extends Component {
               <h3 className="font-bold">JavaScript</h3>
             </div>
             <div>
+              <BiLogoTypescript className="text-7xl hover:text-[#130f40]" />
+              <h3 className="font-bold">TypeScript</h3>
+            </div>
+            <div>
+              <TbBrandNextjs className="text-7xl hover:text-slate-900" />
+              <h3 className="font-bold">Next JS</h3>
+            </div>
+            <div>
               <FaFire className="text-7xl hover:text-[#f0db4f]" />
               <h3 className="font-bold">Firebase</h3>
             </div>
@@ -92,8 +103,16 @@ class Skills extends Component {
               <h3 className="font-bold">Bootstrap</h3>
             </div>
             <div>
-              <img width={80} height={80} src="/t.png" alt="" />
+              <BiLogoTailwindCss className="text-7xl hover:text-[#0d6efd]" />
               <h3 className="font-bold">Tailwind</h3>
+            </div>
+            <div>
+              <SiRedux className="text-7xl hover:text-[#764abc]" />
+              <h3 className="font-bold">Redux</h3>
+            </div>
+            <div>
+              <SiReactquery className="text-7xl hover:text-orange-700" />
+              <h3 className="font-bold">Tanstack Query</h3>
             </div>
           </div>
         </div>
