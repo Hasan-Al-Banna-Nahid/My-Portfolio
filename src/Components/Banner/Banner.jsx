@@ -120,7 +120,12 @@ class Banner extends Component {
           <div>
             <div className="my-2">
               {/* <img src="../undraw_feeling_proud_qne1.png" alt="" /> */}
-              <img src="./76616-programming-unscreen.gif" alt="" />
+              <img
+                src="./76616-programming-unscreen.gif"
+                alt=""
+                width={800}
+                height={800}
+              />
             </div>
           </div>
         </div>
