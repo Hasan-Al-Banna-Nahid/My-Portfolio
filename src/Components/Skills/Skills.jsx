@@ -19,7 +19,7 @@ import {
 } from "react-icons/fa";
 import { BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiRedux, SiReactquery } from "react-icons/si";
+import { SiRedux, SiReactquery, SiExpress } from "react-icons/si";
 import "./Skills.css";
 import AnimatedCursor from "react-animated-cursor";
 
@@ -67,11 +67,15 @@ class Skills extends Component {
               <h3 className="font-bold">React JS</h3>
             </div>
             <div>
-              <FaNode className="text-7xl hover:text-[#215732]" />
+              <FaNode className="text-7xl hover:text-[#303030]" />
               <h3 className="font-bold">Express JS</h3>
             </div>
             <div>
-              <FaDatabase className="text-7xl hover:text-[#589636]" />
+              <FaNode className="text-7xl hover:text-[#589636]" />
+              <h3 className="font-bold">Node JS</h3>
+            </div>
+            <div>
+              <SiExpress className="text-7xl hover:text-[#589636]" />
               <h3 className="font-bold">Mongo DB</h3>
             </div>
             <div>
