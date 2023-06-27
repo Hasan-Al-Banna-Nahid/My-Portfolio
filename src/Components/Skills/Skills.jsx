@@ -79,11 +79,11 @@ class Skills extends Component {
               <h3 className="font-bold">JavaScript</h3>
             </div>
             <div>
-              <BiLogoTypescript className="text-7xl hover:text-[#130f40]" />
+              <BiLogoTypescript className="text-7xl hover:text-blue-900" />
               <h3 className="font-bold">TypeScript</h3>
             </div>
             <div>
-              <TbBrandNextjs className="text-7xl hover:text-slate-900" />
+              <TbBrandNextjs className="text-7xl hover:text-blue-900" />
               <h3 className="font-bold">Next JS</h3>
             </div>
             <div>
