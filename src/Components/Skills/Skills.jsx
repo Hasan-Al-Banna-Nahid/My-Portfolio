@@ -67,7 +67,7 @@ class Skills extends Component {
               <h3 className="font-bold">React JS</h3>
             </div>
             <div>
-              <FaNode className="text-7xl hover:text-[#303030]" />
+              <SiExpress className="text-7xl hover:text-[#2d3436]" />
               <h3 className="font-bold">Express JS</h3>
             </div>
             <div>
@@ -75,7 +75,7 @@ class Skills extends Component {
               <h3 className="font-bold">Node JS</h3>
             </div>
             <div>
-              <SiExpress className="text-7xl hover:text-[#589636]" />
+              <FaDatabase className="text-7xl hover:text-[#589636]" />
               <h3 className="font-bold">Mongo DB</h3>
             </div>
             <div>
