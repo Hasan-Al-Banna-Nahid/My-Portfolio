@@ -46,10 +46,10 @@ const Banner = () => {
       />
       <div className="lg:flex justify-between justify-center-center p-8 ">
         <div
-          // data-aos="zoom-in-down"
-          // data-aos-easing="linear"
-          // data-aos-duration="1500"
-          className="mx-auto z-50"
+          data-aos="zoom-in-down"
+          data-aos-easing="linear"
+          data-aos-duration="1500"
+          className="mx-auto"
         >
           <h3 className="text-4xl font-bold">
             Hi EveryOne,👋 I'm <br />{" "}
@@ -154,15 +154,15 @@ const Banner = () => {
             </div>
           </div>
           <br />
-          <div className="flex ">
-            <div className="mx-6 text-4xl">
+          <div className="md:flex grid grid-cols-2 gap-2">
+            <div className="mx-2 text-4xl">
               <Link to="/contact">
                 <button className="btn btn-outline btn-accent">
                   Contact Me
                 </button>
               </Link>
             </div>
-            <div className="text-4xl ">
+            <div className="text-4xl mx-2 ">
               <a
                 href="https://drive.google.com/file/d/1LOkGMUMTevWVEAOsEj9RrJjrDSj4lwXG/view?usp=sharing"
                 target="blank"
@@ -172,20 +172,6 @@ const Banner = () => {
                   Resume
                 </button>
               </a>
-            </div>
-            <div className="text-4xl mx-2">
-              <Link to={"/projects"}>
-                <button className="btn btn-outline btn-warning  w-28">
-                  projects
-                </button>
-              </Link>
-            </div>
-            <div className="text-4xl mx-2">
-              <Link to={"/skills"}>
-                <button className="btn btn-outline btn-success  w-28">
-                  Skills
-                </button>
-              </Link>
             </div>
           </div>
         </div>

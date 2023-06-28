@@ -30,8 +30,6 @@ class Skills extends Component {
   render() {
     return (
       <div>
-        <Header />
-
         <div
           className="my-6  p-6 z-50 grid lg:grid-cols-2 lg:gap-4"
           id="skills"
@@ -130,7 +128,6 @@ class Skills extends Component {
             </div>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }

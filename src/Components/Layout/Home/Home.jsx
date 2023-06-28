@@ -5,15 +5,17 @@ import Banner from "../../Banner/Banner";
 import Proficiency from "../../Proficiency/Proficiency";
 import Skills from "../../Skills/Skills";
 import Particle from "./Particles";
+import Footer from "../../Footer/Footer";
 
 const Home = () => {
   return (
     <div>
-      <Particle />
+      {/* <Particle /> */}
       <Header />
       <Banner />
-      {/* <Skills /> */}
+      <Skills />
       {/* <Proficiency /> */}
+      <Footer />
     </div>
   );
 };
