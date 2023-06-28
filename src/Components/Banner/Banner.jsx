@@ -5,28 +5,29 @@ import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import Header from "../Header/Header";
 import { Link } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
+import { TypeAnimation } from "react-type-animation";
 
 class Banner extends Component {
   render() {
-    const skills = [
-      "React Js",
-      "Express JS",
-      "JavaScript",
-      "Firebase",
-      "MongoDB",
-      "TailwindCSS",
-      "Bootstrap",
-      "HTML 5",
-      "CSS 3",
-    ];
-    let index = 0;
-    function showNextSkill() {
-      const slider = document.getElementById("slider");
-      slider.innerHTML = skills[index];
-      index = (index + 1) % skills.length;
-    }
-    setInterval(showNextSkill, 1300);
-    const intro = document.getElementById("intro");
+    // const skills = [
+    //   "React Js",
+    //   "Express JS",
+    //   "JavaScript",
+    //   "Firebase",
+    //   "MongoDB",
+    //   "TailwindCSS",
+    //   "Bootstrap",
+    //   "HTML 5",
+    //   "CSS 3",
+    // ];
+    // let index = 0;
+    // function showNextSkill() {
+    //   const slider = document.getElementById("slider");
+    //   slider.innerHTML = skills[index];
+    //   index = (index + 1) % skills.length;
+    // }
+    // setInterval(showNextSkill, 1300);
+    // const intro = document.getElementById("intro");
 
     return (
       <div className="lg:mx-16 banner">
@@ -58,12 +59,70 @@ class Banner extends Component {
               </span>
             </h3>
             <p id="intro" className="text-3xl  font-bold">
-              A passionate Front End Software Engineer 🚀 <br /> having an
-              experience of building Modern Web Applications with some cool
-              Libraries and Frameworks.
+              A passionate
+              <TypeAnimation
+                sequence={[
+                  " Software Engineer 🚀",
+                  1000,
+                  " Developer 🚀",
+                  1000,
+                  " MERN Stack Engineer🚀",
+                  1000,
+                  " Front End  Engineer🚀",
+                  1000,
+                  " Back End  Engineer🚀",
+                  1000,
+                  " Full Stack Engineer 🚀",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{
+                  padding: "8px",
+                  color: "#8e44ad",
+                  fontSize: "2.5rem",
+                  display: "inline-block",
+                }}
+                repeat={Infinity}
+              />{" "}
+              {/* Software Engineer 🚀  */}
+              <br />
+              having an experience of building Modern Web Applications with some
+              cool Libraries and Frameworks.
             </p>
             <div id="slider" className="text-[#c0392b] text-6xl font-bold">
-              <div>{showNextSkill}</div>
+              <div>
+                <TypeAnimation
+                  sequence={[
+                    "React Js",
+                    1000,
+                    "Express JS",
+                    1000,
+                    "Next JS",
+                    1000,
+                    "JavaScript",
+                    1000,
+                    "TypeScript",
+                    1000,
+                    "Firebase",
+                    1000,
+                    "MongoDB",
+                    1000,
+                    "TailwindCSS",
+                    1000,
+                    "Bootstrap",
+                    1000,
+                    "HTML 5",
+                    1000,
+                    "CSS 3",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: "2em", display: "inline-block" }}
+                  repeat={Infinity}
+                />
+              </div>
             </div>
             <br />
             <div className=" flex text-6xl">
