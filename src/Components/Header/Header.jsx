@@ -19,7 +19,7 @@ class Header extends Component {
     });
   };
 
-  darkMode(params) {
+  darkMode() {
     document.body.style.backgroundColor = "#130f40";
     document.body.style.color = "#ffffff";
     document.getElementById("menu").style.color = "Black";
@@ -47,7 +47,7 @@ class Header extends Component {
             border: "3px solid var(--cursor-color)",
           }}
         />
-        <div className="navbar bg-base-300 text-[#130f40] font-bold">
+        <div className="navbar z-50 bg-base-300 text-[#130f40] font-bold">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -108,7 +108,7 @@ class Header extends Component {
 
             <Link
               to="/"
-              className="text-[#b71540] btn btn-ghost normal-case text-2xl name font-bold text-[#2c3e50]"
+              className="text-[#b71540] z-50 btn btn-ghost normal-case text-2xl name font-bold "
             >
               {leftAngle} Hasan Al Banna{rightAngle}
             </Link>

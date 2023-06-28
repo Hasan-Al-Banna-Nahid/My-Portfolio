@@ -4,7 +4,7 @@ const Footer = () => {
   const leftAngle = "<";
   const rightAngle = " />";
   return (
-    <div>
+    <div className="z-50">
       <div>
         <a className="text-[#b71540] btn btn-ghost normal-case my-6 text-4xl text-center name font-bold ">
           {leftAngle} Hasan Al Banna{rightAngle}

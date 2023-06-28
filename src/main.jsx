@@ -9,6 +9,7 @@ import Experience from "./Components/Experience/Experience";
 import AboutMe from "./Components/About/AboutMe";
 import Contact from "./Components/Contact/Contact";
 import Projects from "./Components/Projects/Projects";
+import Skills from "./Components/Skills/Skills";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/projects",
         element: <Projects />,
+      },
+      {
+        path: "/skills",
+        element: <Skills />,
       },
     ],
   },
