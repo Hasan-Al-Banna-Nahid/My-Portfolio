@@ -12,7 +12,7 @@ const Home = () => {
       <Particle />
       <Header />
       <Banner />
-      <Skills />
+      {/* <Skills /> */}
       {/* <Proficiency /> */}
     </div>
   );
