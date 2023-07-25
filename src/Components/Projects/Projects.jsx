@@ -418,6 +418,67 @@ const Projects = () => {
           </div>
         </div>
         {/* Card 6*/}
+        {/* Card 7 */}
+        <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 031920.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 031933.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 031945.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 031957.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 032008.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 032031.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 032041.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 032053.png" />
+            </div>
+            <div>
+              <img src="./Belletrist/Screenshot 2023-07-26 032209.png" />
+            </div>
+          </Carousel>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title text-[22px] text-red-800">Belletrist</h2>
+            <li className="font-bold text-slate-800">
+              This is a Script Writing Site
+            </li>{" "}
+            <br />
+            <li className="font-bold text-slate-800">
+              There Is ChatGPT integration for Chat Completion
+            </li>{" "}
+            <div className="card-actions">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
+                <Link to="https://belletrist-8e1fe.web.app/" target="_blank">
+                  Live Site
+                </Link>
+              </button>
+
+              <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
+                <Link
+                  to="https://github.com/Hasan-Al-Banna-Nahid/Belletrist"
+                  target="_blank"
+                >
+                  Source Code Client Side
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Card 7 */}
       </div>
       <Footer />
     </div>
