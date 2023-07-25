@@ -164,7 +164,7 @@ const Banner = () => {
             </div>
             <div className="text-4xl mx-2 ">
               <a
-                href="https://drive.google.com/file/d/1LOkGMUMTevWVEAOsEj9RrJjrDSj4lwXG/view?usp=sharing"
+                href="https://drive.google.com/file/d/1CKVrlj_LoJYEy1oyvOOIs-SjsN3kEpun/view?usp=drive_link"
                 target="blank"
                 rel="noreferrer"
               >

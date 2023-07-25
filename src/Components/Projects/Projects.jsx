@@ -49,9 +49,6 @@ const Projects = () => {
               This Site Is Like a Job Portal.
             </li>{" "}
             <br />
-            <li className="font-bold text-slate-800">
-              The Main Page Contains The Top Job And Fetured Jobs In Trending.
-            </li>
             <br />
             <li className="font-bold text-slate-800">
               In Applied Page Which Job Is Clicked To Apply Those Job Show Them
@@ -113,11 +110,6 @@ const Projects = () => {
               This Is a Toy Selling Site
             </li>{" "}
             <br />
-            <li className="font-bold text-slate-800">
-              There is A home Route Which Containg Other
-              Component(Banner,Featured Toys,Toys Gallery,Shop by Category,Shop
-              By Age,Header,Footer)
-            </li>
             <br />
             <li className="font-bold text-slate-800">
               there is a All Toy Section in Header Which Show All The Toys That
@@ -271,6 +263,161 @@ const Projects = () => {
           </div>
         </div>
         {/* Card 3 */}
+
+        {/* Card 4 */}
+        <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
+            <div>
+              <img src="/emphires/1 (1).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (2).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (3).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (4).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (5).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (6).png" />
+            </div>
+            <div>
+              <img src="/emphires/1 (7).png" />
+            </div>
+          </Carousel>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title text-[22px] text-red-800">Emphires</h2>
+            <li className="font-bold text-slate-800">
+              This is a Job Portal site
+            </li>{" "}
+            <br />
+            <li className="font-bold text-slate-800">
+              There Is A Landing page And a candidates search Functionality
+            </li>{" "}
+            <div className="card-actions">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
+                <Link to="https://emphires-1fd59.web.app/" target="_blank">
+                  Live Site
+                </Link>
+              </button>
+
+              <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
+                <Link
+                  to="https://github.com/Hasan-Al-Banna-Nahid/Emphires"
+                  target="_blank"
+                >
+                  Source Code Client Side
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Card 4 */}
+
+        {/* Card 5 */}
+        <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
+            <div>
+              <img src="/Recruitment/1 (1).png" />
+            </div>
+            <div>
+              <img src="/Recruitment/1 (2).png" />
+            </div>
+            <div>
+              <img src="/Recruitment/1 (3).png" />
+            </div>
+            <div>
+              <img src="/Recruitment/1 (4).png" />
+            </div>
+          </Carousel>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title text-[22px] text-red-800">
+              Recruitment Agency
+            </h2>
+            <li className="font-bold text-slate-800">
+              This is a Job Portal site
+            </li>{" "}
+            <br />
+            <li className="font-bold text-slate-800">
+              There Is A Landing page And a candidates search Functionality
+            </li>{" "}
+            <div className="card-actions">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
+                <Link to="https://recruitment-ce371.web.app/" target="_blank">
+                  Live Site
+                </Link>
+              </button>
+
+              <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
+                <Link
+                  to="https://github.com/Hasan-Al-Banna-Nahid/Recruitment"
+                  target="_blank"
+                >
+                  Source Code Client Side
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Card 5 */}
+
+        {/* Card 6*/}
+        <div className="card w-96 bg-base-300 shadow-xl mx-auto my-6">
+          <Carousel className="w-[400px]" width={380} dynamicHeight={380}>
+            <div>
+              <img src="/Job Board/1 (1).png" />
+            </div>
+            <div>
+              <img src="/Job Board/1 (2).png" />
+            </div>
+            <div>
+              <img src="/Job Board/1 (3).png" />
+            </div>
+            <div>
+              <img src="/Job Board/1 (4).png" />
+            </div>
+            <div>
+              <img src="/Job Board/1 (5).png" />
+            </div>
+          </Carousel>
+          <div className="card-body items-center text-center">
+            <h2 className="card-title text-[22px] text-red-800">Job Board</h2>
+            <li className="font-bold text-slate-800">
+              This is a Job Portal site
+            </li>{" "}
+            <br />
+            <li className="font-bold text-slate-800">
+              There Is A Landing page And a candidates search Functionality
+            </li>{" "}
+            <div className="card-actions">
+              <button className="btn btn-outline btn-primary">
+                <FaEye className="text-[18px] mx-2" />{" "}
+                <Link to="https://job-board-dd1b3.web.app/" target="_blank">
+                  Live Site
+                </Link>
+              </button>
+
+              <button className="btn btn-outline btn-info">
+                <FaGithub className="text-[18px] mx-2" />{" "}
+                <Link
+                  to="https://github.com/Hasan-Al-Banna-Nahid/Job-board"
+                  target="_blank"
+                >
+                  Source Code Client Side
+                </Link>
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* Card 6*/}
       </div>
       <Footer />
     </div>
